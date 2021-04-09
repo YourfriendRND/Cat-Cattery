@@ -1,0 +1,97 @@
+.team-info {
+    background-color: @second-background-color;
+    margin: 0 auto;
+    width: (290px * 100%)/320px;
+
+    @media (min-width: @tablet-width) {
+        background-color: @general-background-black;
+        width: (649px * 100%)/768px;
+        height: 410px;
+        border: 0.5px solid @third-border-brown;
+    }
+
+    @media (min-width: @desktop-width) {
+        //margin-right: (170px * 100%)/1366px;
+        margin-left: 537px;
+        width: (660px * 100%)/1366px;
+        //max-width: 700px;
+    }
+}
+
+.team-info__wrapper {
+    @media (min-width: @tablet-width) {
+        width: (600px * 100%)/649px;
+        height: 363px;
+        background-color: @second-background-color;
+        margin: 23px auto;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: (600px * 100%/660px);
+    }
+}
+
+.team-info__name {
+    .roboto-500;
+    font-size: 18px;
+    line-height: 21px;
+    color: @general-brown;
+    padding-top: 88px;
+    padding-bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        font-size: 24px;
+        line-height: 28px;
+        margin-left: 106px;
+        text-align: start;
+        padding-top: 70px;
+    }
+}
+
+.team-info__position {
+    .roboto-regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: @general-brown;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 12px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 16px;
+        line-height: 22px;
+        margin-left: 106px;
+        text-align: start;
+        padding-top: 10px;
+    }
+}
+
+.team-info__position-comment {
+    .roboto-300;
+    color: @basic-white-color;
+    opacity: 0.72;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        width: 68%;
+        font-size: 16px;
+        line-height: 26px;
+        margin-left: 106px;
+        text-align: start;
+        padding-top: 30px;
+        padding-bottom: 44px;
+    }
+}
+
+.team-info__position-comment br {
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}

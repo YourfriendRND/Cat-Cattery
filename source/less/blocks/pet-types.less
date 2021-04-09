@@ -1,0 +1,35 @@
+.pet-types {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+.pet-types__button {
+    .roboto-500;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: @basic-white-color;
+    opacity: 0.2;
+    text-decoration: none;
+    
+    @media (min-width: @tablet-width) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    &:nth-child(2) {
+       padding: 0 45px;
+
+       @media (min-width: @tablet-width) {
+           padding: 0 26px;
+       }
+    }
+}
+
+.pet-types__button[disabled] {
+    opacity: 1;
+}

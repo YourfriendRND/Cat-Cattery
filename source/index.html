@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Питомник Мейн-Кунов</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="body-page">
+    <header class="header-page">
+        <svg class="header-page__logo-icon" width="50" height="22">
+            <use xlink:href="img/icons/sprite.svg#crown"></use>
+        </svg>
+            <h1 class="header-page__main-headline">Питомник Мейн-Кунов</h1>
+            <p class="header-page__city-info">Новосибирск</p>
+            <p class="header-page__motto">Первый питомник с расширенным спектром услуг</p>
+            <a class="header-page__catalog-cat catalog-button" href="#pets">Смотреть котиков</a>
+            <picture>
+                <source media="(min-width: 1366px)" srcset="img/main-red-cat-desktop.png 1x, img/main-red-cat-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/main-red-cat-tablet.png 1x, img/main-red-cat-tablet@2x.png 2x">
+                <img class="header-page__background-image" src="img/main-red-cat-mobile.png" srcset="img/main-red-cat-mobile@2x.png 2x"  alt="Мейн-кун Рыжик лицо питомника">
+            </picture>
+            <ul class="header-page-social-list">
+                <li class="header-page-social-list__item">
+                    <a class="header-page-social-list__item-link" href="#">
+                        <svg class="header-page-social-list__icon header-page-social-list__icon--vk" width="13" height="8">
+                            <use xlink:href="img/icons/sprite.svg#Vkontakte"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-page-social-list__item">
+                    <a class="header-page-social-list__item-link" href="#">
+                        <svg class="header-page-social-list__icon header-page-social-list__icon--twitt" width="15" height="11">
+                            <use xlink:href="img/icons/sprite.svg#Twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-page-social-list__item">
+                    <a class="header-page-social-list__item-link" href="#">
+                        <svg class="header-page-social-list__icon header-page-social-list__icon--fb" width="15" height="11">
+                            <use xlink:href="img/icons/sprite.svg#Facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+    </header>
+    <main class="main">
+        <section class="pets">
+            <h2 class="pets__headline" id="pets">Питомцы</h2>
+            <p class="pets__info">
+                Все представители нашего питомника<br>
+                имеют ветеринарный паспорт с отметками<br>
+                о прививках и документ с родословной<br>
+            </p>
+            <div class="pet-types">
+                <button class="pet-types__button pet-types__button--cats-male" aria-label="Показать котов" disabled>Коты</button>
+                <button class="pet-types__button pet-types__button--cats-female" aria-label="Показать кошек">Кошки</button>
+                <button class="pet-types__button pet-types__button--kittens" aria-label="Показать котят">Котята</button>
+            </div>
+            <div class="pets-slider">
+                <div class="pets-slider__photos-wrapper">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="img/black-cat-desktop.png 1x, img/black-cat-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/black-cat-tablet.png 1x, img/black-cat-tablet@2x.png 2x">
+                        <img class="pets-slider__photo pets-slider__photo-one pets-slider__photo--active" src="img/black-cat-mobile.png" srcset="img/black-cat-mobile@2x.png 2x" alt="Кот породы Мейн-Кун серого окраса">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="img/white-cat-desktop.png 1x, img/white-cat-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/white-cat-tablet.png 1x, img/white-cat-tablet@2x.png 2x">
+                        <img class="pets-slider__photo pets-slider__photo-two pets-slider__photo--non-active" src="img/white-cat-mobile.jpg" srcset="img/white-cat-mobile@2x.jpg 2x" alt="Кот породы Мейн-Кун белого окраса">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="img/brown-cat-desktop.png 1x, img/brown-cat-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/brown-cat-tablet.png 1x, img/brown-cat-tablet@2x.png 2x">
+                        <img class="pets-slider__photo pets-slider__photo-three pets-slider__photo--non-active" src="img/brown-cat-mobile.png" srcset="img/brown-cat-mobile@2x.png 2x" alt="Кот породы Мейн-Кун коричневого окраса">
+                    </picture>
+                </div>
+                <button class="pets-slider__button pets-slider__button--next" type="button" aria-label="следующее фото">
+                    <svg width="8" height="18" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 10.3333L1 19" stroke="#A07B50"/>
+                    </svg>                        
+                </button>
+                <button class="pets-slider__button pets-slider__button--previous" type="button" aria-label="предыдущее фото">
+                    <svg width="8" height="18" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 1L1 10.3333L9 19" stroke="#A07B50"/>
+                    </svg>
+                </button>
+            </div>
+            <a class="pets__catalog-cat catalog-button" href="#">Смотреть больше</a>
+        </section>
+        <section class="features">
+            <h2 class="features__headline">Особенности породы</h2>
+            <p class="features__description">
+                <span class="features__enter">Мейн-Кун - это порода, которая вызывает<br>
+                к себе уважение.</span> Приобретая в свой дом<br>
+                этого питомца, вы получите <span class="features__enter">умное<br>
+                животное, которому нет равных<br></span>
+            </p>
+            <div class="features__wrapper">
+                <div class="features-image">
+                    <picture>
+                        <source media="(min-width: 1366px)" srcset="img/cat-circle-desktop.png 1x, img/cat-circle-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/cat-circle-tablet.png 1x, img/cat-circle-tablet@2x.png 2x">
+                        <img class="features-image__cat" src="img/cat-circle.png" srcset="img/cat-circle@2x.png 2x"  alt="Еще одно фото Рыжика">
+                    </picture>
+                </div>
+                <ul class="features-list">
+                    <li class="features-list__item">Легко уживается в семьях с детьми или другими животными</li>
+                    <li class="features-list__item">Выполняет команды как дрессированная собака</li>
+                    <li class="features-list__item">Вес может достигать 12 кг, а длина 1 м</li>
+                    <li class="features-list__item">Внешний вид этой кошки похож на дикую рысь</li>
+                </ul>
+            </div>
+        </section>
+        <section class="reasons">
+            <h2 class="reasons__headline">Почему именно мы?</h2>
+            <p class="reasons__text">Приобретая  животное в нашем питомнике, вы получите</p>
+            <ul class="reasons-list">
+                <li class="reasons-list__item">
+                    <p class="reasons-list__item-text reasons-list__item-text--free-vet"> Бесплатное ветеринарное обслуживание 5 лет</p>
+                </li>
+                <li class="reasons-list__item">
+                    <p class="reasons-list__item-text reasons-list__item-text--consulting">Консультирование по любому вопросу 24 часа в сутки</p>
+                </li>
+                <li class="reasons-list__item">
+                    <p class="reasons-list__item-text reasons-list__item-text--feeding">Индивидуальный подбор питания для вашего кота</p>
+                </li>
+            </ul>
+        </section>
+        <section class="care">
+            <h2 class="care__headline">Об уходе <br> за Мейн-Куном</h2>
+            <ul class="care-list">
+                <li class="care-list__item">
+                    <h3 class="care-list__item-headline">Шерсть</h3>
+                    <p class="care-list__item-description">Мы разработали 5 правил,<br> 
+                        следуя которым, шерсть вашего<br>
+                        кота всегда будет блестящей,<br>
+                        мягкой и послушной</p>
+                    <button class="care-list__item-button care-list__item-button--wool" type="button" aria-label="Показать информацию"></button>
+                </li>
+                <li class="care-list__item">
+                    <h3 class="care-list__item-headline">Уши и глаза</h3>
+                    <p class="care-list__item-description">
+                        Владельцам котов необходимо<br>
+                        регулярно осматривать<br>
+                        ушки и глаза своих питомцев,<br> 
+                        ведь это может быть<br>
+                        признаками заболевания</p>
+                    <button class="care-list__item-button care-list__item-button--eyes-ears" type="button" aria-label="Показать информацию"></button>
+                </li>
+                <li class="care-list__item">
+                    <h3 class="care-list__item-headline">Когти</h3>
+                    <p class="care-list__item-description">
+                        Нужно ли стричь когти?<br>
+                        Это мы и выясним, плюс<br>
+                        ко всему расскажем как<br> 
+                        подобрать идеальную<br> 
+                        когтеточку</p>
+                    <button class="care-list__item-button care-list__item-button--clutches" type="button" aria-label="Показать информацию"></button>
+                </li>
+                <li class="care-list__item">
+                    <h3 class="care-list__item-headline">Питание</h3>
+                    <p class="care-list__item-description">В нашем питомнике существует<br> 
+                        два подхода: натуральное<br> 
+                        питание и питание<br>
+                        промышленными кормами,<br>
+                        но выбирать только вам</p>
+                    <button class="care-list__item-button care-list__item-button--food" type="button" aria-label="Показать информацию"></button>
+                </li>
+            </ul>
+        </section>
+        <section class="team">
+            <h2 class="team__headline">Наша команда</h2>
+            <p class="team__text">Все сотрудники нашего питомника<br> 
+                дипломированые специалисты<br>
+                в области фелинологии и ветеринарии
+            </p>
+            <div class="team-photos">
+              <picture>
+                <source media="(min-width: 1366px)" srcset="img/CEO-desktop.jpg 1x, img/CEO-desktop@2x.jpg 2x"> 
+                <source media="(min-width: 768px)" srcset="img/CEO-tablet.jpg 1x, img/CEO-tablet@2x.jpg 2x">
+                <img class="team-photos__image" src="img/CEO.jpg" srcset="img/CEO@2x.jpg 2x" alt="фото сотрудника">
+              </picture>
+              <button class="team-photos__button-next" type="button" aria-label="Показать следующего сотрудника"></button>
+              <button class="team-photos__button-previous" type="button" aria-label="Показать предыдущего сотрудника"></button>
+            </div>
+            <div class="team-info">
+              <div class="team-info__wrapper">
+                <h3 class="team-info__name">Серёжа Попов </h3>
+                <p class="team-info__position">Основатель питомника</p>
+                <p class="team-info__position-comment">Наш питомник занимается разведением<br>
+                    Мейн-Кунов на протяжении 15 лет.<br>
+                    Мы в ответе за каждого приобретенного<br>
+                    вами питомца
+                </p>
+                <ul class="team-social-networks">
+                    <li class="team-social-networks__item">
+                         <a class="team-social-networks__item-link" href="#">
+                            <svg class="team-social-networks__icon team-social-networks__icon--fb" width="5" height="12">
+                                <use xlink:href="img/icons/sprite.svg#Facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-networks__item">
+                        <a class="team-social-networks__item-link" href="#">
+                            <svg class="team-social-networks__icon team-social-networks__icon--twitt" width="16" height="12">
+                                <use xlink:href="img/icons/sprite.svg#Twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-social-networks__item">
+                        <a class="team-social-networks__item-link" href="#">
+                            <svg class="team-social-networks__icon team-social-networks__icon--vk" width="18" height="10">
+                                <use xlink:href="img/icons/sprite.svg#Vkontakte"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </section>
+        <section class="faq">
+            <h2 class="faq__headline">Вопрос-Ответ</h2>
+            <p class="faq__text">Мы ответим на самые популярные ваши вопросы</p>
+            <ul class="faq-list">
+                <li class="faq-list__item">
+                    <h3 class="faq-list__question">С какого возраста можно забирать котенка из <br> питомника?</h3>
+                    <div class="faq-list__wrapper">
+                      <p class="faq-list__answer">Есть важная причина, почему котенка<br>
+                        стоит забирать домой только после<br>
+                        трех месяцев, — это вакцинация.<br>
+                        Первые прививки животному делают<br>
+                        в возрасте 8 недель. Ревакцинация<br>
+                        проводится через 3–4 недели. То есть<br>
+                        котенок, покидающий дом позднее 12<br>
+                        недель, максимально защищен от<br>
+                        различных вирусов и инфекций.<br class="faq-list__answer-enter">
+                        <br class="faq-list__answer-enter">
+                        Так что, чтобы в доме появился<br>
+                        психически и физически здоровый<br>
+                        котенок, игривый, жизнерадостный,<br>
+                        самостоятельный и воспитанный, не<br>
+                        спешите забирать его от кошки-мамы<br>
+                        раньше трех месяцев.</p>
+                    </div>
+                    <button class="faq-list__button faq-list__button--clicked" type="button" aria-label="Показать ответ"></button>
+                </li>
+                <li class="faq-list__item">
+                    <h3 class="faq-list__question">Как зарезервировать котенка?</h3>
+                    <div class="faq-list__wrapper visually-hidden">
+                        <p class="faq-list__answer">
+                            1. Для того, чтобы зарезервировать<br>
+                            котенка, Потенциальный Покупатель<br>
+                            перечисляет задаток на карту ( или<br>
+                            наличными) - это часть стоимости<br>
+                            котенка. Параллельно Вы получаете<br>
+                            от нас все инструкции и памятки по <br>
+                            подготовке к приезду котенка и его<br> 
+                            содержанию. <br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            2. Зарезервированным, по <br> 
+                            договорённости сторон, котёнок<br>
+                            считается только тогда, когда за него<br>
+                            получен задаток и Заводчик и<br>
+                            Потенциальный Покупатель оформили<br>
+                            Договор Резервирования Котенка.<br>
+                            Во всех других случаях (резервирование<br>
+                            на словах, обещания подъехать «точно<br>
+                            завтра, послезавтра» и прочее) котёнок<br>
+                            не считается зарезервированным и<br>
+                            заводчик вправе соглашаться на<br>
+                            параллельные предложения и продать<br>
+                            его любому другому желающему.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            3. В случае отказа от<br>
+                            зарезервированного котенка или неявки<br>
+                            за котенком в установленный срок -<br>
+                            котенок будет продан другому<br>
+                            желающему, а сумма внесённого задатка<br>
+                            не возвращается. Причина не<br>
+                            возвращения денежных средств — это<br>
+                            расходы на питание и уход за малышом,<br>
+                            а также отказ другим желающим в его<br>
+                            приобретении, т.к зарезервированный<br>
+                            котёнок снимается с продажи.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            4. В случае необоснованного отказа<br>
+                            Заводчика передать котенка<br>
+                            Потенциальному Покупателю, задаток<br>
+                            полностью возвращается.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            5. Заводчик оставляет за собой право<br>
+                            отказать в резервировании и <br>
+                            приобретении у него котёнка любому не<br>
+                            понравившемуся ему Потенциальному<br>
+                            Покупателю (нам далеко не всё равно в<br>
+                            какие руки попадёт наш малыш)<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            6. Если вы готовы зарезервировать<br>
+                            котенка, то свяжитесь с нами по<br>
+                            указанному ниже телефону<br>
+                        </p>
+                    </div>
+                    <button class="faq-list__button" type="button" aria-label="Показать ответ"></button>
+                </li>
+                <li class="faq-list__item">
+                    <h3 class="faq-list__question">Можно ли купить кота, если я живу в другом городе?</h3>
+                    <div class="faq-list__wrapper visually-hidden">
+                        <p class="faq-list__answer">
+                            Многие спрашивают есть ли доставка в<br>
+                            другие города, а что за этим стоит?<br>
+                            Прежде всего Вы должны понимать, что<br>
+                            котенок это живой ребенок и отправить<br>
+                            его к своим котородителям в другой<br>
+                            город нужно по максимально<br>
+                            комфортным условиям. Для этого нужен<br>
+                            проверенный курьер, у которого есть<br>
+                            реальные отзывы не фейковых<br>
+                            отправителей котят. Доставку котенка<br>
+                            оплачивает покупатель. <br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+
+                            Для того чтобы котенок доехал до вас в<br>
+                            комфортных условиях, покупается<br>
+                            переноска хорошего качества, в которой<br>
+                            будет безопасно перевозить котенка,<br>
+                            т.е из хорошего, плотного пластика с<br>
+                            надежно закрывающей застежкой.<br>
+                            Поилка которая крепится к решетке<br>
+                            дверцы переноски, если дорога дальняя<br>
+                            миски и лоток (еду и воду, наполнитель).<br>
+                            Как правило этот пункт обговаривается<br>
+                            заранее с покупателем, потому что и этот<br>
+                            пункт оплачивает он. Цена котенка плюс<br>
+                            сумма двух этих пунктов и будет<br>
+                            составлять стоимость котенка, с<br>
+                            доставкой в другой город. <br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+
+                            Поэтому прежде чем резервировать<br>
+                            котенка из другого города, посмотрите<br>
+                            возможно рядом с Вами есть питомник,<br>
+                            где можно зарезервировать котенка, без<br>
+                            его доставки.
+                        </p>
+                    </div>
+                    <button class="faq-list__button" type="button" aria-label="Показать ответ"></button>
+                </li>
+                <li class="faq-list__item">
+                    <h3 class="faq-list__question">Как подготовить дом к приему нового питомца? </h3>
+                    <div class="faq-list__wrapper visually-hidden">
+                        <p class="faq-list__answer">
+                            1. Поставьте ограничители на двери,<br>
+                            закрывайте шкафы, проверяйте<br>
+                            стиральную машину перед загрузкой<br>
+                            белья. <br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            2. Спрячьте электрические кабели в<br>
+                            короб и не оставляйте зарядные<br>
+                            устройства без присмотра. <br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            3. Держите окна и дверь на балкон<br>
+                            закрытыми, чтобы котенок не выпал.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            4. Нужно постоянно следить за<br>
+                            питомцем, когда в доме работает<br>
+                            обогреватель и плита.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            5. Уберите повыше бытовую химию и<br>
+                            мелкие предметы, которые котенок<br>
+                            может проглотить.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            6. Уберите из дома ядовитые растения.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            7. Подготовьте для котенка спальное<br>
+                            место в домике или коробке.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            8. Приобретите три миски и лоток.<br class="faq-list__answer-enter">
+                            <br class="faq-list__answer-enter">
+                            9. Котенку также понадобятся игрушки,<br>
+                            когтеточка, шампунь, щетка, ножницы<br>
+                            для стрижки когтей и переноска.<br class="faq-list__answer-enter">
+                        </p>
+                    </div>
+                    <button class="faq-list__button " type="button" aria-label="Показать ответ"></button>
+                </li>
+            </ul>
+        </section>
+        <section class="reviews">
+            <h2 class="reviews__headline">Отзывы</h2>
+            <div class="reviews-photos">
+                <picture>
+                    <source media="(min-width: 1366px)" srcset="img/buyer-photo-desktop.png 1x, img/buyer-photo-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/buyer-photo-tablet.png 1x, img/buyer-photo-tablet@2x.png 2x">
+                    <img class="reviews-photos__buyer" src="img/buyer-photo.png" srcset="img/buyer-photo@2x.png 2x" alt="фото покупателя">
+                </picture>
+                <button class="reviews-photos__button-next" type="button" aria-label="показать следующий отзыв"></button>
+                <button class="reviews-photos__button-previous" type="button" aria-label="показать предыдущий отзыв"></button>
+            </div>
+            <div class="reviews-info">
+                <h3 class="reviews-info__name">Серёжа Попов</h3>
+                <p class="reviews-info__text">
+                    Я выражаю огромную<br>
+                    благодарность <br class="reviews-info__text-enter"> вашему питомнику.<br>
+                    Мой Феликс невероятно <br class="reviews-info__text-enter"> умен<br>
+                    и воспитан. Огромным плюсом<br>
+                    питомника  <br class="reviews-info__text-enter"> является возможность<br>
+                    консультироваться в любое время
+                </p>
+                <ul class="reviews-contacts-list">
+                    <li class="reviews-contacts-list__item"> 
+                        <time class="reviews-contacts-list__date" datetime="2018-05-24">24 Мая 2018</time>
+                    </li>
+                    <li class="reviews-contacts-list__item">
+                        <a class="reviews-contacts-list__item-link" href="#">
+                            <svg class="reviews-contacts-list__icon reviews-contacts-list__icon--twitt" width="16" height="12">
+                                <use xlink:href="img/icons/sprite.svg#Twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="reviews-contacts-list__item">
+                        <a class="reviews-contacts-list__item-link" href="#">
+                            <svg class="reviews-contacts-list__icon reviews-contacts-list__icon--vk" width="18" height="10">
+                                <use xlink:href="img/icons/sprite.svg#Vkontakte"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-page">
+        <p class="footer-page__address">Новосибирск, Пушкинский проспект, 19</p>
+        <a class="footer-page__phone-number" href="tel:+73839006465">+7 (383) 900-64-65</a>
+        <ul class="footer-social-networks">
+            <li class="footer-social-networks__item">
+                <a class="footer-social-networks__item-link" href="">
+                    <svg class="footer-social-networks__icon footer-social-networks__icon--fb" width="22" height="16">
+                        <use xlink:href="img/icons/sprite.svg#Facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-social-networks__item">
+                <a class="footer-social-networks__item-link" href="">
+                    <svg class="footer-social-networks__icon footer-social-networks__icon--twitt" width="22" height="16">
+                        <use xlink:href="img/icons/sprite.svg#Twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-social-networks__item">
+                <a class="footer-social-networks__item-link" href="">
+                    <svg class="footer-social-networks__icon footer-social-networks__icon--vk" width="25" height="14">
+                        <use xlink:href="img/icons/sprite.svg#Vkontakte"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <svg class="footer-page__logo-icon" width="56" height="25">
+            <use xlink:href="img/icons/sprite.svg#crown"></use>
+        </svg>
+    </footer>
+    
+    <section class="wool visually-hidden">
+        <h2 class="wool__headline">Правила ухода за шерстью</h2>
+        <div class="wool__wrapper">
+            <p class="wool__content">
+                1. Правильное питание и должный уход<br>
+                поможет выглядеть вашему питомцу<br>
+                привлекательным и здоровым.
+            </p>
+            <p class="wool__content">
+                2. Уход должен быть постоянным,<br>
+                а не разовым. Иначе представитель<br>
+                данной породы будет выглядеть<br>
+                неухоженным измученным животным.
+            </p>
+            <p class="wool__content">
+                3. Причесывание шерстки и удаление<br>
+                свалявшихся комочков обязательно<br>
+                для Мейн Кунов, как и для любой<br>
+                длинношерстной кошки. Эта процедура<br>
+                должна доставлять удовольствие коту,<br>
+                а не отрицательные эмоции. Шерсть<br>
+                причесывается от головы к хвосту,<br>
+                а грива – в противоположную сторону.
+            </p>
+            <p class="wool__content">
+                4. Не забываем купать любимца.<br>
+                Эта процедура также должна<br>
+                доставлять только положительные<br>
+                эмоции, как вам, так и вашему питомцу.
+            </p>
+            <p class="wool__content">
+                5. Особое внимание заслуживает<br>
+                длинный хвост этого великолепного<br>
+                животного. Ведь у взрослых котов,<br>
+                в период полового созревания,<br>
+                выделяется очень много жира на<br>
+                кончике. Поэтому он заслуживает<br>
+                отдельного внимания.
+            </p>
+        </div>
+        <button class="wool__close-button" aria-label="Закрыть окно">Закрыть</button>
+    </section>
+
+    <section class="clutches visually-hidden">
+        <h2 class="clutches__headline">Правила ухода за когтями</h2>
+        <div class="clutches__wrapper">
+            <p class="clutches__content">
+                Кошка — это не только приятная и<br> 
+                пушистая компания у вас дома, но еще<br> 
+                и ответственность. Ее нужно кормить,<br> 
+                купать и время от времени показывать <br>
+                ветеринару. Неотъемлемой частью<br>
+                этой заботы всегда будет и уход<br>
+                за когтями кошками. Это может быть<br>
+                необходимо не только для того,<br> 
+                чтобы сохранить целостность мебели<br>
+                и обоев, но и для безопасности<br>
+                самого животного.
+            </p>
+            <p class="clutches__content">
+                Когда когти отрастают слишком<br> 
+                длинные, кошка ими цепляется за <br>
+                ковровое покрытие. Как только она<br>
+                зацепится, самостоятельно отцепиться<br>
+                будет ей очень сложно. Особенно если<br>
+                она в этот момент бежала. Это может<br>
+                привести к тому, что коготь обломится,<br>
+                или еще страшнее, если он вырвется<br>
+                «с мясом». Представьте, насколько<br>
+                это больно.
+            </p>
+            <p class="clutches__content">
+                Стригут ли кошкам когти? Еще как,<br>
+                без этого иногда не обойтись.<br>
+                Процесс простой, но требует<br>
+                постоянства. Только регулярная<br>
+                процедура поможет обезопасить<br> 
+                и себя, и имущество, и само животное. <br>
+                Однако необязательно обрезать,<br>
+                можно приобрести специальные<br>
+                накладки на когти для кошек.<br>
+                Они бывают силиконовые.<br> 
+                Кардинальная мера – это полное<br> 
+                удаление когтей у кошек, отзывы<br> 
+                на эту операцию различные.<br>
+                Одни владельцы считают это<br>
+                настоящим кощунством, иные же<br> 
+                считают эту операцию наилучшим выходом.
+            </p>
+            <p class="clutches__content">
+                Казалось бы, процедура простая,<br> 
+                но одно неверное движение,<br>
+                и животному будет очень больно. <br>
+                Если же делать все правильно, то<br> 
+                процедура стрижки когтей абсолютно<br>
+                безболезненна. Это тоже самое, что<br>
+                стричь себе ногти. Только разница<br> 
+                в том, что наши ногти без нервов и<br>
+                кровеносных сосудов, поэтому<br> 
+                обрезание свободного края<br>
+                полностью без боли. У животных<br> 
+                же все немного сложнее устроено.
+            </p>
+            <p class="clutches__content">
+                Если глянуть на просвет кошачий<br>
+                коготь (для этого его необходимо<br>
+                выдвинуть аккуратно из подушечки),<br>
+                то будет заметна темная и светлая<br> 
+                зоны. Затемнение – это и есть<br>
+                скопление нервов и сосудов.<br>
+                 Ее при обрезании затрагивать ни<br>
+                в коем случае нельзя. Можно еще<br> 
+                посмотреть на коготь снизу. На нем<br>
+                будет впадинка, обрезать следует до<br>
+                нее. Стрижка когтей у кошек – это<br> 
+                удаление свободного светлого края.
+            </p>
+            <p class="clutches__content">
+                Для этой процедуры необходим<br>
+                специальный секатор. Приобрести<br>
+                его лучше в зоомагазине. Не стоит<br>
+                брать человеческие ножницы или<br>
+                щипчики. Они при обрезании<br>
+                приведут лишь к расслоению ногтя.<br>
+                Специальный же секатор прослужит<br> 
+                вам долгие годы.
+            </p>
+            <p class="clutches__content">
+                Как обрезать когти кошке при<br>
+                помощи секатора? Слегка надавите<br>
+                на подушечку кошачьего пальчика,<br>
+                чтобы из нее вылез острый крючок.<br>
+                Теперь осторожно вставьте его в<br>
+                отверстие секатора, убедившись,<br> 
+                что область с нервами и сосудами<br>
+                не попала в гильотину. Быстро, но<br>
+                аккуратно отрезайте лишний<br>
+                отросший участок. Если будете<br> 
+                медлить, то коготь будет крошиться<br>
+                и расслаиваться.
+            </p>
+            <h3 class="clutches__extra-headline">Выбор когтеточки</h3>        
+            <p class="clutches__content">
+                Здесь действует одно важное правило –<br>
+                вы выбираете не для себя, а для питомца.<br> 
+                Не нужно подбирать этот предмет под<br> 
+                дизайн интерьера квартиры, выбирать<br>
+                модели, которые визуально нравятся<br> 
+                вам. Если котенку не понравится<br>
+                когтедралка, хозяева обречены на<br>
+                неудачу.<br class="clutches__content-enter">
+                <br class="clutches__content-enter">
+                - Отдавайте предпочтение высоким<br>
+                моделям. У кошки должна быть <br>
+                возможность потянуться и<br>
+                почесаться как можно выше.<br class="clutches__content-enter">
+                <br class="clutches__content-enter">
+                - Если вы купили настенную модель<br>
+                когтедралки, повесьте ее так, чтобы<br>
+                стоя на задних лапах, кот мог<br>
+                полностью вытянуть передние над<br>
+                головой.<br class="clutches__content-enter">
+                <br class="clutches__content-enter">
+                - Покупайте устойчивые модели.<br>
+                Если котенок почувствует, что<br> 
+                когтеточка шатается или смещается,<br> 
+                он может испугаться и отказаться ее<br>
+                использовать.<br class="clutches__content-enter">
+                <br class="clutches__content-enter">
+                - Выбирайте текстуру, которая<br>
+                понравится питомцу. Если котенок<br>
+                любит царапать ковер, подойдут<br>
+                варианты с ковролином. Если вы<br>
+                не уверены, что подойдет, попробуйте<br>
+                когтеточки с натуральной веревкой,<br>
+                намотанной на столб или модели<br>
+                из гофрокартона. <br class="clutches__content-enter">
+                <br class="clutches__content-enter">
+                - Избегайте моделей из синтетических<br>
+                волокон и веревок, они создают<br>
+                статическое электричество, это<br>
+                отпугивает кошек.<br class="clutches__content-enter">
+                <br class="clutches__content-enter">
+                - Дайте питомцу возможность выбора,<br>
+                приобретите несколько аксессуаров с<br>
+                разной текстурой.
+            </p>
+            <button class="clutches__close-button" aria-label="Закрыть окно">Закрыть</button>
+        </div>
+    </section>
+    <section class="eyes-ears visually-hidden">
+        <h2 class="eyes-ears__headline">Уход за глазами и ушами кошек </h2>
+        <div class="eyes-ears__wrapper">
+            <h3 class="eyes-ears__extra-headline">Уход за глазами</h3>
+            <p class="eyes-ears__content">
+                Проблемы с глазками и носом чаще<br>
+                всего касаются питомцев с<br>
+                приплюснутой мордочкой. Глаза кошки<br>
+                следует регулярно очищать, не допуская<br>
+                скопления грязи. Для этой цели можно<br>
+                использовать обычные ватные тампоны,<br>
+                смоченные кипяченой водой или 2%<br>
+                раствором борного спирта. Легким<br>
+                движением протрите участки вокруг<br>
+                глаз в направлении от внутреннего<br>
+                уголка к наружному.
+            </p>
+            <h3 class="eyes-ears__extra-headline">Уход за ушами</h3>
+            <p class="eyes-ears__content">
+                НУЖНО ЛИ КОШКАМ ЧИСТИТЬ УШИ?<br>
+                <br class="eyes-ears__content-enter">
+                Некоторые хозяева считают, что с этой<br>
+                гигиенической процедурой кошка <br>
+                может справиться самостоятельно.<br>
+                Иногда действительно так, если у<br>
+                животного нет склонности к<br>
+                заболеваниям ушей и отсутствуют<br>
+                другие факторы, провоцирующие<br>
+                проблемы. Однако эта ситуация –<br>
+                скорее исключение, нежели правило.<br>
+                И вне зависимости от частоты чисток,<br>
+                уши питомцев нужно осматривать<br>
+                регулярно. Так что участие хозяев<br>
+                обязательно в любом случае.
+            </p>
+            <p class="eyes-ears__content">
+                КАК ОПРЕДЕЛИТЬ, ЧТО У КОШКИ<br>
+                ПРОБЛЕМЫ С УШАМИ?<br>
+                <br class="eyes-ears__content-enter">
+                1. Кошка трясет головой или<br>
+                наклоняет ее.<br>
+                <br class="eyes-ears__content-enter">
+                2. Кошка настойчиво чешет уши <br>
+                и даже расчесывает их до крови.<br>
+                <br class="eyes-ears__content-enter">
+                3. Ушная сера имеет неприятный запах.<br>
+                <br class="eyes-ears__content-enter">
+                4. Уши быстро загрязняются и<br>
+                выделения не похожи на обычную<br>
+                ушную серу.<br>
+                <br class="eyes-ears__content-enter">
+                5. Кошка не дает дотронуться до ушей.<br>
+                <br class="eyes-ears__content-enter">
+                6. Внутри обнаруживаются<br>
+                неестественные наросты, шишки,<br>
+                опухоли.<br>
+                <br class="eyes-ears__content-enter">
+                7. Кожа в ухе покрасневшая,<br>
+                шелушится, есть признаки воспаления,<br>
+                корочки. Если вы наблюдаете какие-то<br>
+                из перечисленных симптомов, это<br>
+                повод для обращения за консультацией<br>
+                в ветеринарную клинику.<br>
+            </p>
+            <p class="eyes-ears__content">
+                ЧЕМ ЧИСТИТЬ УШИ КОШКЕ?<br>
+                <br class="eyes-ears__content-enter">
+                Вам понадобятся ватные диски<br>
+                и специальный лосьон. Обычная вата<br>
+                или марля не подходят для этих целей,<br>
+                потому что маленькие кусочки могут<br>
+                остаться в слуховом проходе и вызвать<br>
+                осложнения. Нельзя также чистить уши<br>
+                сухими ватными дисками. Обязательно<br>
+                используйте лосьоны для ушей, которые<br>
+                продаются в зоомагазинах. Они<br>
+                смягчают корочки, предотвращают<br>
+                случайное повреждение кожи, обладают<br>
+                ухаживающим действием. <br>
+                <br class="eyes-ears__content-enter">
+                Не применяйте без показаний<br>
+                ветеринарного врача лечебных<br>
+                средств, в состав которых входят<br>
+                антибиотики и различные лекарственные<br>
+                компоненты. В том числе нельзя для<br>
+                обычной обработки использовать<br>
+                перекись водорода, хлоргексидин <br>
+                и другие антисептики. 
+            </p>
+            <p class="eyes-ears__content">
+                КАК ЧИСТИТЬ УШИ КОШКЕ?<br>
+                <br class="eyes-ears__content-enter">
+                1. Смочите ватный диск лосьоном<br>
+                и оберните его вокруг пальца.<br>
+                <br class="eyes-ears__content-enter">
+                2. Аккуратно соберите грязь,<br>
+                выступающую вблизи ушной раковины.<br>
+                Глубже ни пальцами, ни дисками,<br>
+                ни ватными палочками лезть не нужно<br>
+                – вы можете повредить слуховой<br>
+                проход.Каждый диск используйте<br>
+                только один раз, чтобы не занести<br>
+                грязь в ухо повторно.<br>
+                <br class="eyes-ears__content-enter">
+                3. После чистки ушей похвалите<br>
+                кошку и угостите ее лакомством.
+            </p>
+            <p class="eyes-ears__content">
+                КАК ЧАСТО НУЖНО ЧИСТИТЬ УШИ КОШКЕ?<br>
+                <br class="eyes-ears__content-enter">
+                Все зависит от того, как быстро у вашей<br>
+                кошки загрязняются уши. Каким-то<br>
+                животным уши нужно чистить раз в<br>
+                несколько дней или ежедневно, другим – <br>
+                раз в месяц. Частота здесь очень<br>
+                индивидуальна и универсальной цифры<br> 
+                не существует. Просто понаблюдайте за<br>
+                скоростью загрязнения ушей у вашей<br>
+                кошки, и вы определите необходимую<br>
+                периодичность. Если сомневаетесь,<br>
+                проконсультируйтесь с ветеринарным<br>
+                врачом.
+            </p>
+            <button class="eyes-ears__close-button" aria-label="Закрыть окно">Закрыть</button>
+        </div>
+    </section>
+    <section class="food visually-hidden">
+        <h2 class="food__headline">Питание Мейн-Куна</h2>
+        <div class="food__wrapper">
+            <h3 class="food__extra-headline">Натуральное питание</h3>
+            <p class="food__content">
+                Кошка является хищником, поэтому <br>
+                основную часть ее рациона должно<br>
+                составлять мясо и продукты из него.<br>
+                В нем содержатся все необходимые для<br>
+                организма животного вещества –<br>
+                витамины, минералы, белки. Для кунов<br>
+                предпочтительнее натуральное питание<br>
+                так как оно максимально подходит для<br>
+                них. Такой рацион должен включать в<br>
+                себя следующие ингредиенты:
+            </p>
+            <ul class="food__content-list">
+                <li class="food__content-list-item">мясо (желательно сырое);</li>
+                <li class="food__content-list-item">рыба;</li>
+                <li class="food__content-list-item">различные злаки;</li>
+                <li class="food__content-list-item">молочные продукты;</li>
+                <li class="food__content-list-item">молоко;</li>
+                <li class="food__content-list-item">овощи.</li>
+            </ul>
+            <p class="food__content">
+                Мясо должно быть включено<br> 
+                обязательно в рацион животного.<br>
+                Самым правильным ветеринары<br>
+                считают птицу, кролика, говядина.<br>
+                Сырая говядина – самое естественная<br>
+                пища для хищников. Оно влияет на<br>
+                увеличение мышечной массы тела.
+            </p>
+            <p class="food__content">
+                Рыбой лучше не злоупотреблять,<br>
+                но если рыба все-таки выбрана в<br>
+                качестве питания, лучше выбрать<br>
+                сорта, в которых нет костей. Они<br>
+                могут травмировать пищевод, желудок,<br>
+                что может привести к очень серьезным<br>
+                проблемам. Нельзя давать копченную<br>
+                или соленую рыбу, она плохо скажется<br>
+                на состоянии почек. Для кошки можно<br>
+                выбрать несколько раз в неделю<br>
+                красные сорта рыбы, так как в ней<br>
+                много полезных жирных кислот.
+            </p>
+            <p class="food__content">
+                Не стоит использовать для кормления<br>
+                кисломолочные продукты с жирностью<br>
+                более 9%, но и обезжиренные также<br>
+                нельзя. Не рекомендуется включать<br> 
+                в рацион ряженку, сметану, сладкие<br>
+                йогурты. Не стоит использовать<br>
+                молочные продукты с большим<br>
+                сроком годности.Оптимальным<br>
+                решением можно назвать нежирные<br>
+                cорта сыра (5-9%), кефир или<br>
+                простоквашу. Молоко можно давать<br>
+                маленьким котятам, для взрослых<br>
+                особей оно не подходит.
+            </p>
+            <p class="food__content">
+                Очень хорошо для кунов использовать<br>
+                пророщенную пшеницу, овес, ячмень.<br>
+                В них содержатся витамины. Также<br>
+                можно готовить каши, на основе<br>
+                этих злаков с добавлением большого<br>
+                количества мяса. Такие каши могут<br>
+                стать хорошим рационом для животного.
+            </p>
+            <p class="food__content">
+                Овощи можно давать в любом виде.<br>
+                Подойдут для включения в рацион<br> 
+                следующие овощи:</p>
+                <ul class="food__content-list">
+                    <li class="food__content-list-item">морковь;</li>
+                    <li class="food__content-list-item">капуста;</li>
+                    <li class="food__content-list-item">тыква;</li>
+                    <li class="food__content-list-item">помидоры;</li>
+                    <li class="food__content-list-item">огурцы.</li>    
+                </ul>
+            <p class="food__content">
+                Их можно сочетать с мясом, злаками.<br>
+                Если кошка употребляет в пищу фрукты,<br>
+                можно давать их тоже.
+            </p>
+            <h3 class="food__extra-headline">Сухой и влажный корм</h3>
+            <p class="food__content">
+                Для любого владельца кошки, важной<br>
+                вопрос – это правильно подобрать корм.<br>
+                Желательно, чтобы он был из премиум-<br>
+                линейки производителей. В них большое<br>
+                содержание мяса, есть другие полезные<br>
+                добавки. Кроме этого они имеют и<br>
+                другие преимущества:<br class="food__content-enter">
+                <br class="food__content-enter">
+                - удобны в использовании;<br class="food__content-enter">
+                - долго хранятся;<br class="food__content-enter">
+                - имеют достаточное количество калорий;<br class="food__content-enter">            
+            </p>
+            <p class="food__content">
+                Главным недостатком таких кормов<br>
+                является их цена. Эконом-сегмент<br>
+                стоит намного дешевле, но в их<br>
+                составе недостаточно мяса, большое<br>
+                содержание субпродуктов или мяса<br>
+                крайне низкого качестве. Около 80%<br>
+                массы занимают злаки и овощи.<br>
+                Кошка, которая употребляет такие<br>
+                корма не получает нужных ей веществ.<br>
+                Длительное употребление дешевого<br>
+                питания может стать причиной<br>
+                болезней пищеварения, почек,<br>
+                мочевыводящей системы.
+            </p>
+            <p class="food__content">
+                Более подробную информацию о питании<br>
+                взрослых кошек и котят вы получите<br>
+                после приобретения питомца в нашем<br>
+                питомнике.
+            </p>
+            <button class="food__close-button" aria-label="Закрыть окно">Закрыть</button>
+        </div>
+    </section>
+
+    <template id="photos">
+        <picture>
+            <source media="(min-width: 1366px)" srcset="">
+            <source media="(min-width: 768px)" srcset="">
+            <img class="pets-slider__photo pets-slider__photo-one pets-slider__photo--active" src="" srcset="" alt="">
+        </picture>
+        <picture>
+            <source media="(min-width: 1366px)" srcset="">
+            <source media="(min-width: 768px)" srcset="">
+            <img class="pets-slider__photo pets-slider__photo-two pets-slider__photo--non-active" src="" srcset="" alt="">
+        </picture>
+        <picture>
+            <source media="(min-width: 1366px)" srcset="">
+            <source media="(min-width: 768px)" srcset="">
+            <img class="pets-slider__photo pets-slider__photo-three pets-slider__photo--non-active" src="" srcset="" alt="">
+        </picture>
+    </template>
+    <script src="js/script.min.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

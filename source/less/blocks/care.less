@@ -1,0 +1,56 @@
+.care {
+    background-image: url("../img/cat-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../img/cat-background@2x.jpg");
+    }
+
+    @media (min-width: @tablet-width) {
+        background-image: url("../img/cat-background-tablet.jpg");
+        
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/cat-background-tablet@2x.jpg");
+        }
+    }
+
+    @media (min-width: @desktop-width) {
+        background-image: url("../img/cat-background-desktop.jpg");
+        background-size: 100%;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/cat-background-desktop@2x.jpg");    
+        }
+    }
+}
+
+.care__headline {
+    .Yeseva-One;
+    width: 72%;
+    font-size: 28px;
+    line-height: 32px;
+    color: @basic-white-color;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+        padding-top: 90px;
+        padding-bottom: 38px;
+        font-size: 36px;
+        line-height: 42px;  
+    }
+
+    @media (min-width: @desktop-width) {
+        padding-top: 84px;
+        padding-bottom: 5px;
+    }
+}
+
+.care__headline br {
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}

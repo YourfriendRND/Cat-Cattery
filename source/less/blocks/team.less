@@ -1,0 +1,55 @@
+.team {
+    position: relative;
+    background-color: @general-background-black;
+    padding-bottom: 60px;
+
+    @media (min-width: @tablet-width) {
+        padding-bottom: 193px;
+    }
+}
+
+.team__headline {
+    .Yeseva-One;
+    color: @basic-white-color;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 84px;
+    }
+}
+
+.team__text {
+    .roboto-300;
+    font-size: 14px;
+    line-height: 20px;
+    color: @general-brown;
+    padding-top: 35px;
+    padding-bottom: 103px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: @tablet-width) {
+        width: 65%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 37%;
+        padding-top: 23px;
+        padding-bottom: 22px;
+    }
+}
+
+.team__text br {
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+    
+}

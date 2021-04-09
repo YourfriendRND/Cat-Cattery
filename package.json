@@ -1,0 +1,41 @@
+{
+  "name": "main-coon-cat-house",
+  "version": "1.0.0",
+  "description": "Питомник Мейн-Кунов",
+  "main": "index.html",
+  "scripts": {
+    "build": "gulp build",
+    "test": "test",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "cat",
+    "main-coon"
+  ],
+  "author": "Anton Ivanov",
+  "license": "ISC",
+  "bugs": {},
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemap": "^1.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.2.4",
+    "postcss-csso": "^5.0.0"
+  },
+  "dependencies": {}
+}
