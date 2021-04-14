@@ -87,7 +87,6 @@ exports.images = images;
 const scripts = () => {
   return gulp.src("source/js/*.js")
   .pipe(uglify())
-  .pipe(rename({suffix: ".min"}))
   .pipe(gulp.dest("build/js"))
   .pipe(sync.stream())
 }
